@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:backgroundTint="@color/black"
+            android:text="@string/back_to_login"
+            android:layout_marginStart="5sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:src="@drawable/unica_800_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textSize="36sp"
+            android:gravity="center"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/error"
+            android:text="@string/error_signup"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="28sp"
+            android:id="@+id/name"
+            android:hint="@string/name_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="28sp"
+            android:id="@+id/surname"
+            android:hint="@string/surname_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birthdate"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:textSize="28sp"
+            android:id="@+id/birthdate"
+            android:hint="@string/birthdate_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/course"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="28sp"
+            android:id="@+id/course"
+            android:hint="@string/course_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mtr"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="28sp"
+            android:id="@+id/mtr"
+            android:hint="@string/mtr_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="28sp"
+            android:id="@+id/email"
+            android:hint="@string/email_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="28sp"
+            android:id="@+id/username"
+            android:hint="@string/username_example"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="28sp"
+            android:id="@+id/password"
+            android:hint="@string/password_hint"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmPassword"
+            android:textSize="28sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="28sp"
+            android:id="@+id/confirmPassword"
+            android:hint="@string/confirmPassword"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/insert_text"
+            android:backgroundTint="@color/blue"
+            android:text="@string/confirm"
+            android:textAllCaps="true"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/clear_text"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="@string/clear"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+    </LinearLayout>
+
+</ScrollView>
